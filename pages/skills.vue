@@ -1,5 +1,5 @@
 <template>
   <div>
-    Hi about
+    My skills
   </div>
 </template>
