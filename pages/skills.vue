@@ -102,6 +102,11 @@ export default {
           header: "Hard worker",
           clarification:
             "I managed to learn Web Development AND servive medical school at the same time"
+        },
+        {
+          header: "Problem solver",
+          clarification:
+            "I learned to destructure problems to smaller parts. This goes hand in hand with effective Google-ing and Stackoverflow-ing to find answers"
         }
       ]
     }
