@@ -53,7 +53,9 @@ body {
 
 .container {
   width: 1100px;
-  margin: 4rem 4rem 0 0;
+  position: absolute;
+  top: 3.5rem;
+  left: 8rem;
   padding: 2rem;
 }
 </style>

@@ -1,10 +1,7 @@
 <template>
   <div class="sidebar__box">
     <nuxt-link :to="`/${route}`" exact>
-      <div class="sidebar__icon">
-        <i :class="`icon-${icon}`"></i>
-      </div>
-      <h4>{{ text }}</h4>
+      <i :class="`sidebar__icon icon-${icon}`"></i>
     </nuxt-link>
   </div>
 </template>
@@ -20,7 +17,7 @@ export default {
 .sidebar__box {
   text-align: center;
   cursor: pointer;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .sidebar__box:last-of-type {

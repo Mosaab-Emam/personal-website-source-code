@@ -10,13 +10,6 @@
   </div>
 </template>
 
-<style>
-.sidebar {
-  margin: 4rem 2rem 0 2rem;
-  padding: 2rem 1rem;
-}
-</style>
-
 <script>
 import SidebarBox from "@/components/SidebarBox"
 
@@ -53,3 +46,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.sidebar {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  padding: 1rem;
+}
+</style>
