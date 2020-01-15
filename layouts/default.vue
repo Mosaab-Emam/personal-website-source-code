@@ -2,7 +2,9 @@
   <div class="view">
     <Sidebar />
     <div class="container neomorphic">
-      <nuxt />
+      <transition name="router">
+        <nuxt />
+      </transition>
     </div>
   </div>
 </template>
@@ -18,6 +20,14 @@
     inset -8rem -8rem 8rem rgba(255, 255, 255, 0.05);
 }
 
+.cyan-dark {
+  color: var(--cyan-dark);
+}
+
+.cyan-light {
+  color: var(--cyan-light);
+}
+
 *,
 *:before,
 *:after {
@@ -30,15 +40,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
 body {
-  background: hsl(210deg, 30%, 10%);
+  background: hsl(210, 30%, 10%);
   color: white;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .view {

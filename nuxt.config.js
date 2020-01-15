@@ -14,7 +14,13 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: []
+    link: [
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +29,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/fontello.css"],
+  css: [
+    "@/assets/css/fontello.css",
+    "@/assets/css/variables",
+    "@/assets/css/animations.css"
+  ],
   /*
    ** Plugins to load before mounting the App
    */

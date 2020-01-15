@@ -1,0 +1,18 @@
+.router-enter {
+    transform: translateY(1rem);
+    opacity: 0;
+}
+
+.router-enter-active, .router-leave-active {
+    transition: all .5s ease-in-out;
+}
+
+.router-enter-to, .router-leave {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.router-leave-to {
+    transform: translateY(-1rem);
+    opacity: 0
+}
