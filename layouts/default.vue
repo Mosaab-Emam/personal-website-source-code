@@ -28,16 +28,27 @@
   color: var(--cyan-light);
 }
 
+.has-bullet {
+  position: relative;
+}
+
+.has-bullet:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--cyan-dark);
+  border-radius: 50%;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 body {
@@ -47,15 +58,25 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 .view {
   display: flex;
 }
 
 .container {
-  width: 1100px;
   position: absolute;
   top: 3.5rem;
   left: 8rem;
+  right: 4rem;
+  margin-bottom: 3.5rem;
   padding: 2rem;
 }
 </style>

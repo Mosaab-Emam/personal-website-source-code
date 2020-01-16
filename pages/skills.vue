@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <h2 class="main-header cyan-dark neomorphic">Front End Skills:</h2>
+    <h2 class="main-header cyan-dark">Front End Skills:</h2>
     <Skillbox
       v-for="skill in frontSkills"
       :key="skill.header"
@@ -8,14 +8,14 @@
       :speciality="skill.speciality"
     />
     <div class="divider"></div>
-    <h2 class="main-header cyan-dark neomorphic">Back End Skills</h2>
+    <h2 class="main-header cyan-dark">Back End Skills</h2>
     <Skillbox
       v-for="skill in backSkills"
       :key="skill.header"
       :header="skill.header"
     />
     <div class="divider"></div>
-    <h2 class="main-header cyan-dark neomorphic">Related Skills</h2>
+    <h2 class="main-header cyan-dark">Related Skills</h2>
     <Skillbox
       v-for="skill in relSkills"
       :key="skill.header"
@@ -23,7 +23,7 @@
       :speciality="skill.speciality"
     />
     <div class="divider"></div>
-    <h2 class="main-header cyan-dark neomorphic">Soft Skills</h2>
+    <h2 class="main-header cyan-dark">Soft Skills</h2>
     <Skillbox
       v-for="skill in softSkills"
       :key="skill.header"
@@ -117,11 +117,7 @@ export default {
 <style>
 .skills .main-header {
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  padding: 0.5rem 2rem;
-  text-align: center;
-  max-width: fit-content;
+  margin-bottom: 2rem;
 }
 
 .skills .divider {

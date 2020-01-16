@@ -1,6 +1,6 @@
 <template>
   <div class="skill-box">
-    <h2>{{ header }}</h2>
+    <h2 class="has-bullet">{{ header }}</h2>
     <p v-if="speciality">
       Especially familiar with <span class="cyan-dark">{{ speciality }}</span>
     </p>
@@ -29,17 +29,6 @@ export default {
 .skill-box h2 {
   text-transform: uppercase;
   position: relative;
-}
-
-.skill-box h2:before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 0.25rem);
-  left: -1rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: var(--cyan-dark);
-  border-radius: 50%;
 }
 
 .skill-box p {
