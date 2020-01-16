@@ -27,4 +27,10 @@ export default {}
 .about main {
   margin-top: 4rem;
 }
+
+@media (max-width: 767px) {
+  .about {
+    text-align: center;
+  }
+}
 </style>

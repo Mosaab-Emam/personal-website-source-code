@@ -100,6 +100,13 @@ export default {}
   width: 65%;
 }
 
+@media (max-width: 991px) {
+  .project p,
+  .project ul {
+    width: auto;
+  }
+}
+
 .project ul,
 .project li {
   margin-bottom: 1rem;

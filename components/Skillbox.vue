@@ -28,7 +28,6 @@ export default {
 
 .skill-box h2 {
   text-transform: uppercase;
-  position: relative;
 }
 
 .skill-box p {

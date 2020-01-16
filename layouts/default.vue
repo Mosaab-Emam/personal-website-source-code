@@ -44,6 +44,12 @@
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  .has-bullet:before {
+    left: -1.5rem;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -88,7 +94,7 @@ p {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .container {
     left: 2rem;
     right: 2rem;
