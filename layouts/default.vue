@@ -1,5 +1,5 @@
 <template>
-  <div class="view">
+  <div>
     <Sidebar />
     <div class="container neomorphic">
       <transition name="router">
@@ -51,10 +51,14 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 body {
   background: hsl(210, 30%, 10%);
   color: white;
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -67,10 +71,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.view {
-  display: flex;
-}
-
 .container {
   position: absolute;
   top: 3.5rem;
@@ -78,6 +78,21 @@ p {
   right: 4rem;
   margin-bottom: 3.5rem;
   padding: 2rem;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .container {
+    top: 8rem;
+    left: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    left: 2rem;
+    right: 2rem;
+  }
 }
 </style>
 

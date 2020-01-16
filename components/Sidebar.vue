@@ -53,5 +53,17 @@ export default {
   top: 4rem;
   left: 0;
   padding: 1rem;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background: hsl(210, 30%, 10%);
+  }
 }
 </style>

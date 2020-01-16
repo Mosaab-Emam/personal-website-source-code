@@ -2,7 +2,7 @@
   <div class="about">
     <header>
       <h1>MOSAAB EMAM</h1>
-      <h2 class="neomorphic">Full Stack Javascript Developer</h2>
+      <h2 class="cyan-dark">Full Stack Javascript Developer</h2>
     </header>
     <main>
       <p>
@@ -19,21 +19,9 @@ export default {}
 </script>
 
 <style>
-.about header {
-  text-align: center;
-  padding: 2rem;
-  max-width: fit-content;
-  margin: auto;
-}
-
 .about header h1 {
   font-size: 4rem;
-  letter-spacing: 0.5rem;
-}
-
-.about header h2 {
-  margin-top: 1rem;
-  padding: 0.5rem 0;
+  letter-spacing: 0.25rem;
 }
 
 .about main {

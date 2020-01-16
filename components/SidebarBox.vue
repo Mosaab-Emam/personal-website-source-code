@@ -20,6 +20,14 @@ export default {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 991px) {
+  .sidebar__box {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .sidebar__box:last-of-type {
   margin-bottom: 0;
 }
