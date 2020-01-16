@@ -1,7 +1,14 @@
 <template>
   <div class="info-box">
     <div class="label cyan-dark">{{ label }}:</div>
-    <div class="value">{{ value }}</div>
+    <div class="value">
+      <template v-if="value.startsWith('https://')">
+        <a :href="value" target="_blank">{{ value }}</a>
+      </template>
+      <template v-else>
+        {{ value }}
+      </template>
+    </div>
   </div>
 </template>
 
@@ -40,5 +47,9 @@ export default {
   .info-box {
     display: block;
   }
+}
+
+.info-box a {
+  text-decoration: underline;
 }
 </style>

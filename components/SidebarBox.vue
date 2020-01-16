@@ -55,8 +55,13 @@ export default {
   }
 }
 
+.sidebar__text {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .sidebar__text {
+    display: block;
     margin-bottom: 0;
     font-size: 0.75rem;
   }

@@ -122,14 +122,18 @@ form {
 }
 
 form button {
-  width: 100%;
-  border: none;
-  background: var(--cyan-dark);
+  border: 1px solid var(--cyan-dark);
+  background: transparent;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 0.5rem 2rem;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+form button:hover {
+  background: var(--cyan-dark);
 }
 
 .info {
