@@ -89,7 +89,7 @@ p {
 
 @media (max-width: 991px) {
   .container {
-    top: 8rem;
+    top: 7.5rem;
     left: 4rem;
   }
 }

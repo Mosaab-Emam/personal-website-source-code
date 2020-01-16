@@ -61,6 +61,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
+    padding: 0.5rem 0;
     display: flex;
     justify-content: center;
     background: hsl(210, 30%, 10%);
