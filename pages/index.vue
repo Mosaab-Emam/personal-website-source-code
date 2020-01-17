@@ -30,8 +30,21 @@ export default {}
 
 @media (max-width: 767px) {
   .about header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: unset;
+  }
+}
+
+@media (max-width: 399px) {
+  .about header h1,
+  .about header h2 {
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 399px) {
+  .about header h1 {
+    margin-bottom: 1rem;
   }
 }
 

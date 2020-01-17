@@ -30,9 +30,21 @@ export default {
   text-transform: uppercase;
 }
 
+@media (max-width: 399px) {
+  .skill-box h2 {
+    font-size: 1.25rem;
+  }
+}
+
 .skill-box p {
   font-weight: 500;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
+}
+
+@media (max-width: 399px) {
+  .skill-box p {
+    margin-left: 0;
+  }
 }
 </style>

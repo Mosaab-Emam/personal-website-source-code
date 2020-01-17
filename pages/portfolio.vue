@@ -1,5 +1,7 @@
 <template>
   <div class="projects">
+    <h2 class="main-header cyan-dark">Front End Projects:</h2>
+
     <div class="project">
       <h2 class="has-bullet">
         Cloning (and improving) the Netflix landing page
@@ -8,6 +10,14 @@
         Cloning the netflix.com landing page by coding it from scratch seemed
         like a good project to put some of my most used skills into practice.
       </p>
+      <p>Stack used:</p>
+      <ul class="stack">
+        <li><span>Pug.js</span></li>
+        <li><span>Sass</span></li>
+        <li><span>Javascript</span></li>
+        <li><span>Gulp</span></li>
+        <li><span>Gulp</span></li>
+      </ul>
       <p>
         The process of cloning the page showed that it already had many design
         issues. Here they are and my fixes to them:
@@ -91,8 +101,36 @@ export default {}
   margin-bottom: 0;
 }
 
+.projects .main-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.projects .main-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 0.25rem;
+  width: 33%;
+  background: var(--cyan-dark);
+}
+
+@media (max-width: 399px) {
+  .projects .main-header {
+    font-size: 1.75rem;
+  }
+}
+
 .project h2 {
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 399px) {
+  .projects h2 {
+    font-size: 1.25rem;
+  }
 }
 
 .project p,
@@ -110,6 +148,19 @@ export default {}
 .project ul,
 .project li {
   margin-bottom: 1rem;
+}
+
+.project ul.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-left: 1rem;
+}
+
+.project ul.stack li {
+  width: 50%;
+  color: var(--cyan-dark);
 }
 
 .project li span {

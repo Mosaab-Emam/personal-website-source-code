@@ -118,6 +118,23 @@ export default {
 .skills .main-header {
   font-size: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.skills .main-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 0.25rem;
+  width: 33%;
+  background: var(--cyan-dark);
+}
+
+@media (max-width: 399px) {
+  .skills .main-header {
+    font-size: 1.75rem;
+  }
 }
 
 .skills .divider {

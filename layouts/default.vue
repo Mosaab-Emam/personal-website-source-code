@@ -96,8 +96,14 @@ p {
 
 @media (max-width: 767px) {
   .container {
-    left: 2rem;
-    right: 2rem;
+    left: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .container {
+    padding: 1.5rem;
   }
 }
 </style>
