@@ -6,16 +6,17 @@
       <h2 class="has-bullet">
         Cloning (and improving) the Netflix landing page
       </h2>
+      <button class="btn">Preview</button>
+      <button class="btn">Github</button>
       <p>
-        Cloning the netflix.com landing page by coding it from scratch seemed
-        like a good project to put some of my most used skills into practice.
+        Coding the netflix.com landing page from scratch have been a good
+        project to put my most used skills into practice.
       </p>
-      <p>Stack used:</p>
+      <p>The stack I used:</p>
       <ul class="stack">
         <li><span>Pug.js</span></li>
         <li><span>Sass</span></li>
         <li><span>Javascript</span></li>
-        <li><span>Gulp</span></li>
         <li><span>Gulp</span></li>
       </ul>
       <p>
@@ -123,14 +124,19 @@ export default {}
   }
 }
 
-.project h2 {
-  margin-bottom: 1.5rem;
-}
-
 @media (max-width: 399px) {
   .projects h2 {
     font-size: 1.25rem;
   }
+}
+
+.project .btn {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.project .btn:first-of-type {
+  margin-right: 0.5rem;
 }
 
 .project p,

@@ -24,8 +24,16 @@
   color: var(--cyan-dark);
 }
 
-.cyan-light {
-  color: var(--cyan-light);
+.btn {
+  border: 1px solid var(--cyan-dark);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--cyan-dark);
 }
 
 .has-bullet {
@@ -66,6 +74,11 @@ body {
   background: hsl(210, 30%, 10%);
   color: white;
   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 500;
 }
 
 a {
@@ -114,6 +127,11 @@ import Sidebar from "@/components/Sidebar"
 export default {
   components: {
     Sidebar
+  },
+  created() {
+    this.$router.afterEach((to, from) => {
+      scrollTo(0, 0)
+    })
   }
 }
 </script>
